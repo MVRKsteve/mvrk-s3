@@ -1,0 +1,19 @@
+{
+  "name": "mvrk-s3",
+  "version": "1.0.0",
+  "description": "MVRK Helper Service for managing Resources on AWS S3",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Logan Arnett <Logan@LoganArnett.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "s3fs": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "jshint": "^2.9.3"
+  }
+}
