@@ -88,7 +88,7 @@ describe('When Storing Files to S3 it should', () => {
         it('Get All available files in the bucket', () => {
             return GetAll().then(files => {
                 return expect(files.map(file => file.ETag)).to.deep.eql(storedTags);
-            })
+            });
         });
     });
 });

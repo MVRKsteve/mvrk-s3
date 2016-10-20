@@ -38,8 +38,10 @@ const Connect = (options) => {
          * @return {Function} - Exposes the Get method
          */
         get(filePath) {
-            const getOptions = Object.assign({}, baseOptions);
-            getOptions.filePath = filePath;
+            if (!filePath) {
+                return new Error('Please provide a file path');
+            }
+            const getOptions = Object.assign({filePath: filePath}, baseOptions);
             return Methods.Get(getOptions);
         },
         /**
